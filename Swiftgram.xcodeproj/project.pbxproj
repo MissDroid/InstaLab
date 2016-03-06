@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D60B96E3AD221E356359035 /* Pods_Swiftgram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE798EA35B08B4EC8E5A8309 /* Pods_Swiftgram.framework */; };
 		542CAD4B1C8BA2D00007C042 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542CAD4A1C8BA2D00007C042 /* AppDelegate.swift */; };
 		542CAD4D1C8BA2D00007C042 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542CAD4C1C8BA2D00007C042 /* ViewController.swift */; };
 		542CAD501C8BA2D00007C042 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 542CAD4E1C8BA2D00007C042 /* Main.storyboard */; };
 		542CAD521C8BA2D00007C042 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 542CAD511C8BA2D00007C042 /* Assets.xcassets */; };
 		542CAD551C8BA2D00007C042 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 542CAD531C8BA2D00007C042 /* LaunchScreen.storyboard */; };
+		54DCE7451C8BA9B7001969ED /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DCE7441C8BA9B7001969ED /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		542CAD511C8BA2D00007C042 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		542CAD541C8BA2D00007C042 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		542CAD561C8BA2D00007C042 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54DCE7441C8BA9B7001969ED /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		680D7BA14DEBD2C35AF5B2F8 /* Pods-Swiftgram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swiftgram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Swiftgram/Pods-Swiftgram.debug.xcconfig"; sourceTree = "<group>"; };
+		DE798EA35B08B4EC8E5A8309 /* Pods_Swiftgram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swiftgram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F73E2E3CAA78CA4B8F859905 /* Pods-Swiftgram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swiftgram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swiftgram/Pods-Swiftgram.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D60B96E3AD221E356359035 /* Pods_Swiftgram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27694F4B9A1FAF167CC5B25E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE798EA35B08B4EC8E5A8309 /* Pods_Swiftgram.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		542CAD3E1C8BA2D00007C042 = {
 			isa = PBXGroup;
 			children = (
 				542CAD491C8BA2D00007C042 /* Swiftgram */,
 				542CAD481C8BA2D00007C042 /* Products */,
+				85F05BA6AA246F400CD34742 /* Pods */,
+				27694F4B9A1FAF167CC5B25E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +77,18 @@
 				542CAD511C8BA2D00007C042 /* Assets.xcassets */,
 				542CAD531C8BA2D00007C042 /* LaunchScreen.storyboard */,
 				542CAD561C8BA2D00007C042 /* Info.plist */,
+				54DCE7441C8BA9B7001969ED /* TableViewCell.swift */,
 			);
 			path = Swiftgram;
+			sourceTree = "<group>";
+		};
+		85F05BA6AA246F400CD34742 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				680D7BA14DEBD2C35AF5B2F8 /* Pods-Swiftgram.debug.xcconfig */,
+				F73E2E3CAA78CA4B8F859905 /* Pods-Swiftgram.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 542CAD591C8BA2D00007C042 /* Build configuration list for PBXNativeTarget "Swiftgram" */;
 			buildPhases = (
+				B7A43F47C619853C1FF78A12 /* Check Pods Manifest.lock */,
 				542CAD431C8BA2D00007C042 /* Sources */,
 				542CAD441C8BA2D00007C042 /* Frameworks */,
 				542CAD451C8BA2D00007C042 /* Resources */,
+				B3C940C5ECDE1A54A0DBB68C /* Embed Pods Frameworks */,
+				904E34A9E7C3959F65E897BC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,11 +160,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		904E34A9E7C3959F65E897BC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Swiftgram/Pods-Swiftgram-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3C940C5ECDE1A54A0DBB68C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Swiftgram/Pods-Swiftgram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7A43F47C619853C1FF78A12 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		542CAD431C8BA2D00007C042 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54DCE7451C8BA9B7001969ED /* TableViewCell.swift in Sources */,
 				542CAD4D1C8BA2D00007C042 /* ViewController.swift in Sources */,
 				542CAD4B1C8BA2D00007C042 /* AppDelegate.swift in Sources */,
 			);
@@ -247,6 +326,7 @@
 		};
 		542CAD5A1C8BA2D00007C042 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 680D7BA14DEBD2C35AF5B2F8 /* Pods-Swiftgram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Swiftgram/Info.plist;
@@ -258,6 +338,7 @@
 		};
 		542CAD5B1C8BA2D00007C042 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F73E2E3CAA78CA4B8F859905 /* Pods-Swiftgram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Swiftgram/Info.plist;
@@ -286,6 +367,7 @@
 				542CAD5B1C8BA2D00007C042 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
